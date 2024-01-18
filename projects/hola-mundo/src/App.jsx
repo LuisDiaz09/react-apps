@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { CardFollowX } from './CardFollowX'
+import  './App.css'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <p>Hola mundo</p>
+    <section className='App'>
+      <CardFollowX isFollowing={false} userName="midudev">
+        Miguel Ángel
+      </CardFollowX>
+
+      <CardFollowX isFollowing userName="MYMALK4PON3">
+        Alkapone
+      </CardFollowX>
+    </section>
   )
+
 }
 
 export default App
